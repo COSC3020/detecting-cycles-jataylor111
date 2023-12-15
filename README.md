@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12803999&assignment_repo_type=AssignmentRepo)
 # Detecting Cycles in Graphs
 
 Kruskal's Algorithm adds edges to the minimum spanning tree, unless they would
@@ -14,3 +15,6 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## My Response
+If I have this correct, my overall worst case complexity should be $\Theta(EV)$ this is because there is a loop at the bottom that iterates over every edge, and inside that loop there is a call to two seperate functions that each at worst would have to use every vertex, resulting in a total complexity of $\Theta(E(V + V))$ which would then just simplify to $\Theta(EV)$
